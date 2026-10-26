@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+  <!-- Premium Luxury Cinematic Architectural Micro-Texture for Mafia Talkies -->
+  <defs>
+    <!-- Subtle Golden Light Reflection Gradient -->
+    <linearGradient id="goldGlint" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5A93C" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#FDE68A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#E5A93C" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <linearGradient id="violetGlint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.04"/>
+      <stop offset="50%" stop-color="#C084FC" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <!-- Fine Point Starlight / Micro-Diamond Glow -->
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#E5A93C" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#E5A93C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Ultra-fine Vertical Acoustic Architectural Pinstripes (Reflecting the Fluted Wood Decor) -->
+  <line x1="20" y1="0" x2="20" y2="80" stroke="url(#goldGlint)" stroke-width="0.5" stroke-dasharray="1 3" />
+  <line x1="40" y1="0" x2="40" y2="80" stroke="url(#goldGlint)" stroke-width="0.6" />
+  <line x1="60" y1="0" x2="60" y2="80" stroke="url(#goldGlint)" stroke-width="0.5" stroke-dasharray="1 3" />
+  <line x1="0" y1="0" x2="0" y2="80" stroke="url(#goldGlint)" stroke-width="0.5" />
+  <line x1="80" y1="0" x2="80" y2="80" stroke="url(#goldGlint)" stroke-width="0.5" />
+
+  <!-- 2. Subtle Horizontal Lounge Baseline Grid -->
+  <line x1="0" y1="40" x2="80" y2="40" stroke="url(#violetGlint)" stroke-width="0.5" stroke-dasharray="2 4" />
+  <line x1="0" y1="0" x2="80" y2="0" stroke="url(#violetGlint)" stroke-width="0.4" />
+  <line x1="0" y1="80" x2="80" y2="80" stroke="url(#violetGlint)" stroke-width="0.4" />
+
+  <!-- 3. Minimalist Luxury Diamond Micro-Accents at Key Intersections (40,40) and corners -->
+  <!-- Center Star Accent -->
+  <circle cx="40" cy="40" r="4" fill="url(#nodeGlow)" />
+  <circle cx="40" cy="40" r="0.9" fill="#FFFBEB" />
+
+  <!-- Corner Intersections (Seamless 80x80 tiling) -->
+  <circle cx="0" cy="0" r="3.5" fill="url(#nodeGlow)" />
+  <circle cx="0" cy="0" r="0.8" fill="#FFFBEB" />
+
+  <circle cx="80" cy="0" r="3.5" fill="url(#nodeGlow)" />
+  <circle cx="80" cy="0" r="0.8" fill="#FFFBEB" />
+
+  <circle cx="0" cy="80" r="3.5" fill="url(#nodeGlow)" />
+  <circle cx="0" cy="80" r="0.8" fill="#FFFBEB" />
+
+  <circle cx="80" cy="80" r="3.5" fill="url(#nodeGlow)" />
+  <circle cx="80" cy="80" r="0.8" fill="#FFFBEB" />
+
+  <!-- 4. Delicate 45-degree micro-ticks for a bespoke guilloche watchmaker feel -->
+  <line x1="38" y1="40" x2="42" y2="40" stroke="#FDE68A" stroke-width="0.5" stroke-opacity="0.3" />
+  <line x1="40" y1="38" x2="40" y2="42" stroke="#FDE68A" stroke-width="0.5" stroke-opacity="0.3" />
+</svg>

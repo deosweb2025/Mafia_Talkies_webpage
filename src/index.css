@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-cinema: 'Cinzel', serif;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  --color-noir: #08090C;
+  --color-surface: #101217;
+  --color-surface-hover: #161920;
+  --color-gold: #E5A93C;
+  --color-gold-light: #F7D070;
+  --color-gold-dark: #A97116;
+  --color-crimson: #D92338;
+  --color-crimson-glow: rgba(217, 35, 56, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #08090C;
+  color: #F3F4F6;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #08090C;
+  color: #E2E8F0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll margin so fixed navbar doesn't cover headings */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08090C;
+}
+::-webkit-scrollbar-thumb {
+  background: #232733;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5A93C;
+}
+
+/* Cinematic film grain overlay */
+.film-grain {
+  background-image: radial-gradient(rgba(229, 169, 60, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Gold shimmer gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FDE68A 0%, #E5A93C 50%, #B47313 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 50%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-crimson-gradient {
+  background: linear-gradient(135deg, #FFA5A5 0%, #EF4444 50%, #991B1B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Marquee bulb glow effect */
+.marquee-glow {
+  text-shadow: 0 0 10px rgba(229, 169, 60, 0.7), 0 0 20px rgba(229, 169, 60, 0.4), 0 0 35px rgba(229, 169, 60, 0.2);
+}
+
+.crimson-glow {
+  box-shadow: 0 0 25px rgba(217, 35, 56, 0.35);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(229, 169, 60, 0.25);
+}
+
+/* Lightbox Dialog */
+dialog.lightbox-dialog::backdrop {
+  background: rgba(4, 5, 8, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Enhanced image filters for richness & crispness */
+.enhanced-photo {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  filter: contrast(1.08) saturate(1.10) brightness(1.02);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.enhanced-photo:hover {
+  filter: contrast(1.12) saturate(1.15) brightness(1.04);
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes borderRotate {
+  0% {
+    --border-angle: 0deg;
+  }
+  100% {
+    --border-angle: 360deg;
+  }
+}
+
+/* Cinema frame borders with animated glowing border beam */
+.cinema-border {
+  position: relative;
+  border: 1px solid rgba(229, 169, 60, 0.22);
+  background: linear-gradient(180deg, rgba(22, 25, 33, 0.75) 0%, rgba(13, 15, 20, 0.85) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animated Golden Marquee & Neon Aurora Light Beam sweeping around card perimeter */
+.cinema-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--border-angle, 0deg),
+    transparent 0deg,
+    rgba(229, 169, 60, 0.12) 30deg,
+    #E5A93C 75deg,
+    #FFF4CC 90deg,
+    #E5A93C 105deg,
+    rgba(229, 169, 60, 0.12) 150deg,
+    transparent 180deg,
+    rgba(168, 85, 247, 0.15) 240deg,
+    #C084FC 270deg,
+    rgba(217, 35, 56, 0.25) 300deg,
+    transparent 360deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: borderRotate 6s linear infinite;
+  opacity: 0.65;
+  transition: opacity 0.4s ease, filter 0.4s ease;
+  z-index: 10;
+}
+
+.cinema-border:hover {
+  border-color: rgba(229, 169, 60, 0.45);
+  box-shadow: 0 12px 35px -8px rgba(229, 169, 60, 0.22), 0 0 20px -4px rgba(229, 169, 60, 0.15);
+}
+
+.cinema-border:hover::before {
+  opacity: 1;
+  animation-duration: 3s;
+  filter: drop-shadow(0 0 6px rgba(229, 169, 60, 0.65));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <!-- Cinema Art Deco & 35mm Celluloid Seamless Texture for Mafia Talkies -->
+  <defs>
+    <radialGradient id="goldNode" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E5A93C" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#E5A93C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E5A93C" stop-opacity="0.10"/>
+      <stop offset="65%" stop-color="#8B1E1E" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="microGrain" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="2" height="2" fill="#E5A93C" fill-opacity="0.02"/>
+      <rect x="2" y="2" width="2" height="2" fill="#FFFFFF" fill-opacity="0.012"/>
+    </pattern>
+  </defs>
+
+  <!-- Tactile Cinema Velvet Micro Grain Layer -->
+  <rect width="160" height="160" fill="url(#microGrain)"/>
+
+  <!-- Ambient Node Glows at Tile Center and Corners -->
+  <circle cx="80" cy="80" r="70" fill="url(#centerGlow)"/>
+  <circle cx="0" cy="0" r="40" fill="url(#goldNode)"/>
+  <circle cx="160" cy="0" r="40" fill="url(#goldNode)"/>
+  <circle cx="0" cy="160" r="40" fill="url(#goldNode)"/>
+  <circle cx="160" cy="160" r="40" fill="url(#goldNode)"/>
+
+  <!-- Vintage Film Reel Concentric Circles (Center) -->
+  <circle cx="80" cy="80" r="54" stroke="#E5A93C" stroke-width="0.8" stroke-opacity="0.09" stroke-dasharray="3 3"/>
+  <circle cx="80" cy="80" r="38" stroke="#E5A93C" stroke-width="0.75" stroke-opacity="0.12"/>
+  <circle cx="80" cy="80" r="22" stroke="#E5A93C" stroke-width="0.8" stroke-opacity="0.10"/>
+  <circle cx="80" cy="80" r="10" stroke="#E5A93C" stroke-width="0.6" stroke-opacity="0.14"/>
+
+  <!-- 4-Hole Film Reel Sprockets -->
+  <circle cx="80" cy="52" r="5" fill="#E5A93C" fill-opacity="0.08" stroke="#E5A93C" stroke-width="0.6" stroke-opacity="0.18"/>
+  <circle cx="80" cy="108" r="5" fill="#E5A93C" fill-opacity="0.08" stroke="#E5A93C" stroke-width="0.6" stroke-opacity="0.18"/>
+  <circle cx="52" cy="80" r="5" fill="#E5A93C" fill-opacity="0.08" stroke="#E5A93C" stroke-width="0.6" stroke-opacity="0.18"/>
+  <circle cx="108" cy="80" r="5" fill="#E5A93C" fill-opacity="0.08" stroke="#E5A93C" stroke-width="0.6" stroke-opacity="0.18"/>
+
+  <!-- Art Deco Diamond Lattice Connecting Corners to Center -->
+  <path d="M80 0 L160 80 L80 160 L0 80 Z" stroke="#E5A93C" stroke-width="0.75" stroke-opacity="0.08" fill="none"/>
+  <path d="M80 20 L140 80 L80 140 L20 80 Z" stroke="#E5A93C" stroke-width="0.5" stroke-opacity="0.06" fill="none"/>
+
+  <!-- Crosshair Projector Rays -->
+  <line x1="80" y1="0" x2="80" y2="160" stroke="#E5A93C" stroke-width="0.6" stroke-opacity="0.06" stroke-dasharray="4 6"/>
+  <line x1="0" y1="80" x2="160" y2="80" stroke="#E5A93C" stroke-width="0.6" stroke-opacity="0.06" stroke-dasharray="4 6"/>
+
+  <!-- Corner 1/4 Reel Arcs (Seamless Wrap) -->
+  <circle cx="0" cy="0" r="30" stroke="#E5A93C" stroke-width="0.75" stroke-opacity="0.09" fill="none"/>
+  <circle cx="160" cy="0" r="30" stroke="#E5A93C" stroke-width="0.75" stroke-opacity="0.09" fill="none"/>
+  <circle cx="0" cy="160" r="30" stroke="#E5A93C" stroke-width="0.75" stroke-opacity="0.09" fill="none"/>
+  <circle cx="160" cy="160" r="30" stroke="#E5A93C" stroke-width="0.75" stroke-opacity="0.09" fill="none"/>
+
+  <!-- Corner Film Sprockets for Seamless Repetition -->
+  <rect x="0" y="0" width="8" height="5" rx="1" fill="#E5A93C" fill-opacity="0.08"/>
+  <rect x="152" y="0" width="8" height="5" rx="1" fill="#E5A93C" fill-opacity="0.08"/>
+  <rect x="0" y="155" width="8" height="5" rx="1" fill="#E5A93C" fill-opacity="0.08"/>
+  <rect x="152" y="155" width="8" height="5" rx="1" fill="#E5A93C" fill-opacity="0.08"/>
+
+  <!-- Hollywood 4-Point Cinema Stars at Mid-Edges -->
+  <path d="M80 3 L81 7 L85 8 L81 9 L80 13 L79 9 L75 8 L79 7 Z" fill="#E5A93C" fill-opacity="0.22"/>
+  <path d="M80 147 L81 151 L85 152 L81 153 L80 157 L79 153 L75 152 L79 151 Z" fill="#E5A93C" fill-opacity="0.22"/>
+  <path d="M3 80 L7 81 L8 85 L9 81 L13 80 L9 79 L8 75 L7 79 Z" fill="#E5A93C" fill-opacity="0.22"/>
+  <path d="M147 80 L151 81 L152 85 L153 81 L157 80 L153 79 L152 75 L151 79 Z" fill="#E5A93C" fill-opacity="0.22"/>
+</svg>
