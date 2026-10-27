@@ -31,7 +31,7 @@ const Contact = () => {
 • Notes: ${formData.notes || 'None'}`;
 
     const encoded = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/918961363978?text=${encoded}`;
+    const whatsappUrl = `https://wa.me/91${siteData.contact.whatsapp}?text=${encoded}`;
     
     setSubmitted(true);
     

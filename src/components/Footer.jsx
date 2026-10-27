@@ -92,7 +92,7 @@ const Footer = () => {
                 LANDMARK LOCATION
               </span>
               <p className="text-xs text-gray-300">
-                {siteData.company.landmark}, Arabinda Pally, Barasat, Kolkata 700125.
+                {siteData.company.landmark}, Arabinda Pally, Barasat, Kolkata {siteData.company.pincode}.
               </p>
             </div>
           </div>

@@ -43,7 +43,7 @@ const FloatingActionButtons = () => {
         {/* Tooltip on hover */}
         {hoveredButton === 'phone' && (
           <div className="hidden sm:block absolute right-full mr-3 px-3 py-1.5 rounded-lg bg-[#0F1318] border border-[#E5A93C]/40 text-[#E5A93C] text-xs font-semibold whitespace-nowrap shadow-xl">
-            Call +91 89613 63978
+            Call {siteData.contact.displayPhone}
             <span className="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 rotate-45 bg-[#0F1318] border-t border-r border-[#E5A93C]/40"></span>
           </div>
         )}
@@ -52,7 +52,7 @@ const FloatingActionButtons = () => {
           href={siteData.contact.phoneTel}
           onMouseEnter={() => setHoveredButton('phone')}
           onMouseLeave={() => setHoveredButton(null)}
-          aria-label="Call Mafia Talkies now at 8961363978"
+          aria-label={`Call Mafia Talkies now at ${siteData.contact.phone}`}
           className="relative w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-[#FDE68A] via-[#E5A93C] to-[#B47313] hover:from-[#FFF1A8] hover:to-[#CE8E25] text-black flex items-center justify-center shadow-2xl shadow-black/90 border-2 border-[#FDE68A]/60 hover:border-white hover:scale-110 active:scale-95 transition-all duration-300 group focus:outline-none focus:ring-4 focus:ring-[#E5A93C]/50"
         >
           {/* Subtle Outer Ping Wave */}
