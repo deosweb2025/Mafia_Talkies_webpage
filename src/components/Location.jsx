@@ -143,7 +143,7 @@ const Location = () => {
               {/* Google Map Iframe */}
               <iframe
                 title="Mafia Talkies Location on Google Maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.7063124508933!2d88.4789524!3d22.7205166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f899986b6241b7%3A0x8ddfec80e1a66848!2sBarasat%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src={siteData.contact.mapEmbedUrl}
                 className="w-full h-full min-h-[350px] border-0 filter contrast-[1.08] saturate-[1.1] invert-[0.92] hue-rotate-[180deg]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

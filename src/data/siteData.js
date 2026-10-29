@@ -35,13 +35,13 @@ export const siteData = {
     whatsapp: "6290664329",
     whatsappUrl: "https://wa.me/916290664329?text=Hello%20Mafia%20Talkies!%20I%20would%20like%20to%20reserve%20a%20table%20/%20lounge%20seating.",
     email: "mafiatalkieskolkata@gmail.com",
-    mapUrl: "https://maps.app.goo.gl/GzoDYGoM8dj4mKim9",
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.123456789!2d88.4820!3d22.7210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8990a424e8e9f%3A0x6b876543210!2sBarasat%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    mapUrl: "https://maps.app.goo.gl/CMroe4DwhkycZz359",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.596048123456!2d88.4537765!3d22.741932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ0JzMxLjAiTiA4OMKwMjcnMjIuOSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
   },
   social: {
     instagram: "https://instagram.com/mafiatalkies",
     facebook: "https://facebook.com/mafiatalkies",
-    googleMap: "https://maps.app.goo.gl/GzoDYGoM8dj4mKim9",
+    googleMap: "https://maps.app.goo.gl/CMroe4DwhkycZz359",
   },
   hero: {
     eyebrow: "THE CINEMATIC CAFE & BISTRO EXPERIENCE",
