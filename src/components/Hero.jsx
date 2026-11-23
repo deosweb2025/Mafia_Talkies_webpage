@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Film, ChevronLeft, ChevronRight, ArrowRight, MapPin, Sparkles } from 'lucide-react';
+import { Film, ChevronLeft, ChevronRight, ArrowRight, MapPin, Sparkles, UtensilsCrossed } from 'lucide-react';
 import { siteData } from '../data/siteData';
 
 // Top curated real photos of Mafia Talkies for the 2-second film reel slideshow
@@ -203,11 +203,11 @@ const Hero = ({ onOpenImage }) => {
                 </a>
 
                 <a
-                  href="#experience"
+                  href="#menu"
                   className="inline-flex items-center justify-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold tracking-wide text-gray-200 hover:text-white bg-[#141720] hover:bg-[#1C202C] border border-[#E5A93C]/30 hover:border-[#E5A93C] rounded-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
                 >
-                  <Film className="w-4 h-4 text-[#E5A93C]" />
-                  <span>Explore The Cafe</span>
+                  <UtensilsCrossed className="w-4 h-4 text-[#E5A93C]" />
+                  <span>Explore Gourmet Menu</span>
                 </a>
               </div>
             </div>

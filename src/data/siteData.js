@@ -114,35 +114,251 @@ export const siteData = {
       features: ["Crystal Chandelier Overhead", "Wrought-Iron Gold Scroll Chairs", "Chic Glass Enclosure", "Work-Friendly Atmosphere"]
     }
   ],
+  hookahLounge: {
+    title: "VIP Hookah Cafe & Lounge",
+    headline: "Good Vibes | Great Smoke | Together Always",
+    subheading: "Premium Flavours • Relaxing Ambience • Good Company • Perfect Vibes",
+    description: "Step into our moody, cinema-lit private booths for an authentic hookah lounge experience. Handcrafted premium flavours, smooth clouds, and big-screen music video entertainment make every hangout and party special.",
+    tag: "Exclusive Experience",
+    notice: "Available for Dine-in & Party Bookings",
+    features: [
+      "Premium International Flavours",
+      "Plush Velvet & Leather Booths",
+      "Big Screen Music Video Visuals",
+      "Ambient Neon & Mood Glow"
+    ]
+  },
   menuHighlights: [
     {
       category: "Artisanal Coffees & Warm Sips",
       items: [
-        { name: "Mafia House Espresso", desc: "Intense, velvety shot with notes of dark cocoa and crema", tag: "Signature" },
-        { name: "Cinematic Caramel Cappuccino", desc: "Velvety steamed milk over rich espresso with salted caramel drizzle", tag: "Popular" },
-        { name: "Vintage Cafe Mocha", desc: "Dark chocolate infused espresso topped with whipped froth", tag: "Favorite" },
-        { name: "Irish Cream Latte", desc: "Smooth milk latte kissed with non-alcoholic Irish cream notes", tag: "Special" },
-        { name: "Darjeeling Golden Flush", desc: "Aromatic first-flush tea served in fine glass service", tag: "Classic" },
+        { name: "House Espresso Shot", price: 100, isVeg: true, desc: "Intense, dark roasted single shot with thick golden crema", tag: "Signature" },
+        { name: "Velvety Cappuccino", price: 100, isVeg: true, desc: "Rich espresso topped with velvety steamed milk foam and cocoa dust", tag: "Popular" },
+        { name: "Signature Cold Coffee", price: 150, isVeg: true, desc: "Creamy blended chilled espresso with ice cream and cocoa swirl", tag: "Favorite" },
+        { name: "Caffè Americano", price: 100, isVeg: true, desc: "Smooth long black coffee prepared with rich espresso roast", tag: "Classic" },
+        { name: "Kolkata Spiced Milk Tea", price: 50, isVeg: true, desc: "Traditional aromatic milk chai brewed fresh with warming spices", tag: "Comfort" },
       ]
     },
     {
       category: "Signature Mocktails & Chillers",
       items: [
-        { name: "The Godfather Blue Lagoon", desc: "Blue Curacao citrus cooler with fizzy splash and lime wheel", tag: "Must Try" },
-        { name: "Scarface Crimson Sunset", desc: "Pomegranate, cranberry, mint, and fresh lemon sparkle", tag: "Signature" },
-        { name: "Casablanca Mint Mojito", desc: "Crushed garden mint, zesty lime, brown sugar, and bubbly soda", tag: "Classic" },
-        { name: "Velvet Cinema Frappé", desc: "Creamy blended ice coffee with Belgian chocolate chips", tag: "Indulgent" },
-        { name: "Green Apple Sparkler", desc: "Crisp sour apple with crushed ice and soda fizz", tag: "Refreshing" },
+        { name: "The Godfather Blue Lagoon", price: 100, isVeg: true, desc: "Electric blue curacao citrus cooler with sprite fizz and lemon wheel", tag: "Must Try" },
+        { name: "Virgin Mint Mojito", price: 100, isVeg: true, desc: "Fresh muddled garden mint leaves, lime wedges, cane sugar and chilled soda", tag: "Classic" },
+        { name: "Orange Sunrise", price: 100, isVeg: true, desc: "Layered citrus orange juice with grenadine splash over crushed ice", tag: "Signature" },
+        { name: "Kala Khatta Mojito", price: 100, isVeg: true, desc: "Tangy Indian blackberry reduction with black salt, cumin and fizz", tag: "Indulgent" },
+        { name: "Aam Panna Sparkler", price: 100, isVeg: true, desc: "Traditional roasted raw green mango elixir with mint and black salt", tag: "Refreshing" },
       ]
     },
     {
-      category: "Gourmet Bites & Cinema Munchies",
+      category: "Gourmet Chinese & Cinema Munchies",
       items: [
-        { name: "Crispy Peri Peri Fries", desc: "Golden fried potato wedges dusted with spicy peri-peri rub", tag: "Snack" },
-        { name: "Cheesy Loaded Nachos", desc: "Crispy corn tortillas smothered in melted cheddar & salsa", tag: "Sharing" },
-        { name: "Mafia Club Sandwich", desc: "Triple-layer toasted sandwich stuffed with seasoned fillings & herbs", tag: "Chef's Pick" },
-        { name: "Crispy Chicken / Paneer Popcorn", desc: "Bite-sized seasoned crunchies served with garlic aioli", tag: "Hot Seller" },
-        { name: "Classic Italian Pizza Slice", desc: "Wood-fired crust with herb pomodoro sauce and mozzarella", tag: "Savor" },
+        { name: "Dragon Chicken", price: 250, isVeg: false, desc: "Crispy chicken strips tossed in spicy fiery red dragon sauce with cashew nuts", tag: "Chef's Pick" },
+        { name: "Drums of Heaven (4 pcs)", price: 250, isVeg: false, desc: "Frenched chicken winglets tossed in spicy Schezwan garlic sauce", tag: "Signature" },
+        { name: "Kolkata Fish Fry", price: 130, isVeg: false, desc: "Classic Kolkata bhetki fillet marinated in green herbs and crumb fried", tag: "Legendary" },
+        { name: "Chicken Popcorn", price: 170, isVeg: false, desc: "Bite-sized seasoned chicken crunchy poppers, perfect for movie watching", tag: "Cinema Munchies" },
+        { name: "Mafia Zinger Burger", price: 150, isVeg: false, desc: "Super-crispy fried spicy chicken fillet, spicy mayo, pickled gherkins & lettuce", tag: "Hot Seller" },
+      ]
+    }
+  ],
+  fullMenu: [
+    {
+      id: "chinese",
+      category: "Chinese Appetizers",
+      shortTitle: "Chinese",
+      subtitle: "Wok-tossed delicacies infused with garlic, chilies & oriental sauces",
+      icon: "Utensils",
+      items: [
+        { name: "Crispy Fried Babycorn", price: 170, isVeg: true, tag: "Crunchy", desc: "Golden fried tender babycorn tossed with scallions and mild Asian herbs" },
+        { name: "Chili Mushroom", price: 170, isVeg: true, tag: "Popular", desc: "Fresh button mushrooms wok-seared in spicy garlic chili soya glaze" },
+        { name: "Chili Paneer", price: 190, isVeg: true, tag: "Chef's Special", desc: "Soft cottage cheese cubes tossed with bell peppers, onions and chili sauce" },
+        { name: "Crispy Chicken", price: 200, isVeg: false, tag: "Bestseller", desc: "Tender shredded chicken fried to golden crispness in oriental seasoning" },
+        { name: "Dragon Chicken", price: 250, isVeg: false, tag: "Spicy 🔥", desc: "Crispy chicken strips tossed in spicy fiery red dragon sauce with cashew nuts" },
+        { name: "Chili Chicken (6 pcs)", price: 250, isVeg: false, tag: "Classic", desc: "Succulent chicken chunks tossed with green chillies, onions and dark soya sauce" },
+        { name: "Hot Garlic Chicken (6 pcs)", price: 250, isVeg: false, tag: "Chef's Pick", desc: "Chicken tossed in pungent hot garlic sauce with roasted aromatics" },
+        { name: "Honey Chicken (6 pcs)", price: 250, isVeg: false, tag: "Sweet & Spicy", desc: "Crisp chicken glazed in rich clover honey, toasted sesame and mild chili" },
+        { name: "Drums of Heaven (4 pcs)", price: 250, isVeg: false, tag: "Signature", desc: "Frenched chicken winglets tossed in spicy Schezwan garlic sauce" },
+        { name: "Chili Prawn", price: 280, isVeg: false, tag: "Seafood Special", desc: "Juicy prawns wok-tossed with peppers, spring onions and savory chili glaze" },
+        { name: "Chicken 65", price: 260, isVeg: false, tag: "Hot Seller", desc: "Spiced deep-fried chicken tempered with curry leaves and mustard seeds" },
+      ]
+    },
+    {
+      id: "soups-momos",
+      category: "Soups & Momos",
+      shortTitle: "Soups & Momos",
+      subtitle: "Comforting warm broths & authentic Himalayan dumplings",
+      icon: "Soup",
+      items: [
+        { name: "Clear Soup (Veg)", price: 70, isVeg: true, desc: "Light, soothing vegetable broth garnished with scallions" },
+        { name: "Clear Soup (Chicken)", price: 90, isVeg: false, desc: "Aromatic chicken broth infused with ginger and fine shredded chicken" },
+        { name: "Hot & Sour Soup (Veg)", price: 70, isVeg: true, tag: "Tangy", desc: "Tangy and peppery thick broth loaded with diced seasonal vegetables" },
+        { name: "Hot & Sour Soup (Chicken)", price: 90, isVeg: false, tag: "Tangy", desc: "Classic spicy, sour broth with shredded chicken, egg drops and herbs" },
+        { name: "Rich Tomato Soup", price: 70, isVeg: true, desc: "Velvety roasted tomato soup seasoned with mild spices and herbs" },
+        { name: "Manchow Soup (Veg)", price: 100, isVeg: true, tag: "Crunchy", desc: "Hearty garlic and chili soup served with crunchy fried noodles" },
+        { name: "Manchow Soup (Chicken)", price: 120, isVeg: false, tag: "Popular", desc: "Spicy dark soya broth with chicken and egg, topped with crispy noodles" },
+        { name: "Steamed Chicken Momo", price: 110, isVeg: false, tag: "Classic", desc: "Soft steamed dumplings stuffed with juicy minced chicken and fresh herbs" },
+        { name: "Fried Chicken Momo", price: 130, isVeg: false, tag: "Crisp", desc: "Golden deep-fried momos with a crunchy exterior and juicy center" },
+        { name: "Pan-Fried Chicken Momo", price: 150, isVeg: false, tag: "Favorite", desc: "Crisp-bottom dumplings tossed in savory tangy wok sauce" },
+        { name: "Chicken Devil Momo (2x Spicy)", price: 180, isVeg: false, tag: "2x Spicy 🔥🔥", desc: "Wok-tossed momos smothered in ultra-spicy devil chili paste" },
+      ]
+    },
+    {
+      id: "crispy-chicken-fish",
+      category: "Fried Chicken & Seafood",
+      shortTitle: "Crispy Bites",
+      subtitle: "Golden crusted, tender and seasoned to perfection",
+      icon: "Flame",
+      items: [
+        { name: "Chicken Strips (3 pcs)", price: 120, isVeg: false, tag: "Crunchy", desc: "Tender chicken breast fillets coated in spiced golden batter" },
+        { name: "Chicken Drumstick (1 pc)", price: 90, isVeg: false, desc: "Juicy bone-in chicken drumstick marinated in aromatic herbs" },
+        { name: "Chicken Breast (1 pc)", price: 80, isVeg: false, desc: "Crispy herb-crusted tender chicken fillet" },
+        { name: "Chicken Alakiv (1 pc)", price: 100, isVeg: false, tag: "Signature", desc: "Classic Chicken Kiev style cutlet with a decadent herb butter center" },
+        { name: "Chicken Lollipop (4 pcs)", price: 120, isVeg: false, tag: "Popular", desc: "Crispy fried frenched chicken wings served with house dipping sauce" },
+        { name: "Chicken Fingers (4 pcs)", price: 100, isVeg: false, desc: "Crumb-coated succulent chicken tenders served golden brown" },
+        { name: "Chicken Cheese Balls (4 pcs)", price: 120, isVeg: false, tag: "Cheesy", desc: "Minced chicken spheres bursting with melted cheese inside" },
+        { name: "Chicken Nuggets (12 pcs)", price: 170, isVeg: false, tag: "Sharing Platter", desc: "Twelve golden bite-sized nuggets served with dipping dip" },
+        { name: "Chicken Popcorn", price: 170, isVeg: false, tag: "Cinema Munchies", desc: "Bite-sized seasoned chicken crunchy poppers, perfect for movie watching" },
+        { name: "Fish Finger (4 pcs)", price: 120, isVeg: false, tag: "Kolkata Special", desc: "Fresh fish fillets crumbed and fried to golden perfection with kasundi" },
+        { name: "Kolkata Fish Fry", price: 130, isVeg: false, tag: "Legendary", desc: "Classic Kolkata bhetki fillet marinated in green herbs and crumb fried" },
+        { name: "Fish Cheese Balls (2 pcs)", price: 80, isVeg: false, tag: "Cheesy", desc: "Seasoned fish croquettes with a molten cheese heart" },
+        { name: "Golden Fried Prawn", price: 260, isVeg: false, tag: "Chef's Special", desc: "Crispy tempura-style prawns served with tangy dipping sauce" },
+        { name: "Fish Cutlet (1 pc)", price: 70, isVeg: false, desc: "Spiced fish mince cutlet with crispy golden crust" },
+        { name: "French Fries (Medium)", price: 89, isVeg: true, tag: "Classic", desc: "Crispy salted golden potato fries" },
+        { name: "French Fries (Large)", price: 149, isVeg: true, tag: "Large", desc: "Jumbo portion of crispy golden salted fries" },
+      ]
+    },
+    {
+      id: "noodles-rice",
+      category: "Hakka Noodles & Wok Rice",
+      shortTitle: "Noodles & Rice",
+      subtitle: "Flavourful Indo-Chinese mains prepared fresh in hot woks",
+      icon: "UtensilsCrossed",
+      items: [
+        { name: "Veg Hakka Noodles", price: 130, isVeg: true, desc: "Classic street-style noodles tossed with crunchy shredded vegetables" },
+        { name: "Egg Hakka Noodles", price: 150, isVeg: false, desc: "Wok-tossed noodles with scrambled eggs and julienne veggies" },
+        { name: "Egg Chicken Hakka Noodles", price: 180, isVeg: false, tag: "Popular", desc: "Loaded noodles tossed with eggs, tender chicken chunks and vegetables" },
+        { name: "Mix Hakka Noodles", price: 200, isVeg: false, tag: "Chef's Special", desc: "The ultimate combination of egg, chicken, prawns and wok vegetables" },
+        { name: "Veg Schezwan / Chili Garlic Noodles", price: 140, isVeg: true, tag: "Spicy 🔥", desc: "Noodles tossed in fiery homemade Schezwan or pungent chili garlic sauce" },
+        { name: "Egg Schezwan / Chili Garlic Noodles", price: 160, isVeg: false, tag: "Spicy 🔥", desc: "Scrambled egg noodles tossed in spicy Schezwan chili garlic sauce" },
+        { name: "Egg Chicken Schezwan / Chili Garlic Noodles", price: 190, isVeg: false, tag: "Spicy 🔥", desc: "Fiery Schezwan noodles packed with eggs, tender chicken and herbs" },
+        { name: "Mix Schezwan / Chili Garlic Noodles", price: 220, isVeg: false, tag: "Signature 🔥", desc: "Fiery wok noodles loaded with chicken, prawns, egg and roasted garlic" },
+        { 
+          name: "Classic Fried Rice", 
+          isVeg: false,
+          tag: "Wok Special",
+          desc: "Aromatic long-grain rice tossed with scallions, fresh seasonings and light soya",
+          variants: [
+            { name: "Veg", price: 140, isVeg: true },
+            { name: "Egg", price: 160, isVeg: false },
+            { name: "Chicken", price: 180, isVeg: false },
+            { name: "Mix", price: 200, isVeg: false }
+          ]
+        },
+        { 
+          name: "Chili Garlic Fried Rice", 
+          isVeg: false,
+          tag: "Spicy",
+          desc: "Fragrant rice tossed with spicy red chilies, crushed garlic and spring onions",
+          variants: [
+            { name: "Veg", price: 160, isVeg: true },
+            { name: "Egg", price: 180, isVeg: false },
+            { name: "Chicken", price: 200, isVeg: false },
+            { name: "Mix", price: 220, isVeg: false }
+          ]
+        },
+        { 
+          name: "Burnt Garlic Fried Rice", 
+          isVeg: false,
+          tag: "Chef's Pick",
+          desc: "Wok-toasted rice enriched with golden caramelized crispy burnt garlic",
+          variants: [
+            { name: "Veg", price: 160, isVeg: true },
+            { name: "Egg", price: 180, isVeg: false },
+            { name: "Chicken", price: 200, isVeg: false },
+            { name: "Mix", price: 220, isVeg: false }
+          ]
+        },
+        { 
+          name: "Schezwan Fried Rice", 
+          isVeg: false,
+          tag: "Spicy 🔥",
+          desc: "Fiery Indo-Chinese fried rice stir-fried in authentic Sichuan pepper chili paste",
+          variants: [
+            { name: "Veg", price: 160, isVeg: true },
+            { name: "Egg", price: 180, isVeg: false },
+            { name: "Chicken", price: 200, isVeg: false },
+            { name: "Mix", price: 220, isVeg: false }
+          ]
+        },
+      ]
+    },
+    {
+      id: "continental-fastfood",
+      category: "Burgers, Pasta & Bites",
+      shortTitle: "Burgers & Pasta",
+      subtitle: "Gourmet burgers, Italian pastas, toasted sandwiches, Maggi & omelettes",
+      icon: "Sandwich",
+      items: [
+        { name: "Classic Veg Burger", price: 110, isVeg: true, desc: "Crispy seasoned vegetable patty, fresh lettuce, tomato slice and house sauce" },
+        { name: "Juicy Chicken Burger", price: 130, isVeg: false, tag: "Popular", desc: "Grilled savory chicken patty layered with cheese slice and creamy mayo" },
+        { name: "Mafia Zinger Burger", price: 150, isVeg: false, tag: "Signature Crunch", desc: "Super-crispy fried spicy chicken fillet, spicy mayo, pickled gherkins & lettuce" },
+        { name: "Veg Red Sauce Pasta (Arrabbiata)", price: 140, isVeg: true, tag: "Italian", desc: "Penne in slow-simmered spicy tomato basil pomodoro sauce" },
+        { name: "Veg White Sauce Pasta (Alfredo)", price: 140, isVeg: true, tag: "Creamy", desc: "Penne drenched in rich Parmesan garlic cream sauce with garden vegetables" },
+        { name: "Chicken Red Sauce Pasta", price: 180, isVeg: false, desc: "Penne pasta with seasoned chicken cubes in robust herbed marinara sauce" },
+        { name: "Chicken White Sauce Pasta", price: 180, isVeg: false, tag: "Indulgent", desc: "Rich and creamy Alfredo pasta loaded with tender sauteed chicken pieces" },
+        { name: "Toasted Veg Sandwich", price: 100, isVeg: true, addon: "Add Cheese +₹40", desc: "Golden toasted sandwich filled with crisp sliced veggies and mint chutney" },
+        { name: "Grilled Chicken Sandwich", price: 150, isVeg: false, addon: "Add Cheese +₹40", tag: "Hot Seller", desc: "Hearty grilled sandwich loaded with spiced shredded chicken filling" },
+        { name: "Classic Veg Maggi", price: 70, isVeg: true, addon: "Add Cheese +₹40", desc: "Comforting classic noodles cooked with tossed peas, carrots and spices" },
+        { name: "Egg Maggi", price: 80, isVeg: false, addon: "Add Cheese +₹40", desc: "Hot masala Maggi scrambled with farm-fresh eggs and herbs" },
+        { name: "Egg Chicken Maggi", price: 100, isVeg: false, addon: "Add Cheese +₹40", tag: "Favorite", desc: "The ultimate comfort bowl loaded with egg and seasoned chicken bites" },
+        { name: "Plain Omelette", price: 40, isVeg: false, desc: "Light and fluffy two-egg classic breakfast omelette" },
+        { name: "Masala Omelette", price: 50, isVeg: false, tag: "Classic", desc: "Farm eggs whisked with chopped onions, green chilies, coriander and spices" },
+        { name: "Cheese Omelette", price: 80, isVeg: false, tag: "Cheesy", desc: "Fluffy folded omelette stuffed with gooey molten cheddar and mozzarella" },
+        { name: "Paneer Omelette", price: 90, isVeg: false, desc: "Protein-packed omelette folded with grated spiced paneer and herbs" },
+        { name: "Egg Chicken Omelette", price: 100, isVeg: false, tag: "High Protein", desc: "Hearty omelette generously stuffed with seasoned minced chicken" },
+      ]
+    },
+    {
+      id: "brews-shakes",
+      category: "Artisanal Brews & Shakes",
+      shortTitle: "Brews & Shakes",
+      subtitle: "Barista hot brews, thick shakes & decadent signature frost blends",
+      icon: "Coffee",
+      items: [
+        { name: "Black Tea", price: 50, isVeg: true, desc: "Pure brewed golden liquor tea leaves" },
+        { name: "Green Tea", price: 50, isVeg: true, desc: "Antioxidant-rich soothing green tea infusion" },
+        { name: "Milk Tea", price: 50, isVeg: true, tag: "Comfort", desc: "Traditional aromatic spiced milk chai brewed fresh" },
+        { name: "House Espresso Shot", price: 100, isVeg: true, tag: "Barista", desc: "Intense, dark roasted single shot with thick golden crema" },
+        { name: "Classic Cappuccino", price: 100, isVeg: true, tag: "Popular", desc: "Rich espresso topped with velvety steamed milk foam and cocoa dust" },
+        { name: "Caffè Americano", price: 100, isVeg: true, desc: "Smooth long black coffee prepared with rich espresso roast" },
+        { name: "Chilled Cold Coffee", price: 150, isVeg: true, tag: "Bestseller", desc: "Creamy blended chilled espresso with ice cream and cocoa swirl" },
+        { name: "Thick Chocolate Shake", price: 190, isVeg: true, desc: "Rich Belgian chocolate blended with creamy ice cream" },
+        { name: "Crunchy Oreo Shake", price: 190, isVeg: true, tag: "Favorite", desc: "Thick vanilla shake loaded with crushed Oreo cookies and chocolate drizzle" },
+        { name: "Alphonso Mango Shake", price: 190, isVeg: true, desc: "Sweet tropical mango shake blended smooth with chilled milk" },
+        { name: "Crispy KitKat Shake", price: 190, isVeg: true, tag: "Crunchy", desc: "Blended crispy KitKat chocolate wafers with creamy chocolate syrup" },
+        { name: "Fresh Strawberry Shake", price: 190, isVeg: true, desc: "Refreshing sweet strawberry ice cream milkshake" },
+        { name: "Vanilla Frost", price: 250, isVeg: true, tag: "Mafia Signature ⭐", desc: "Ultra-luxurious velvety vanilla bean cream with secret frost blend" },
+        { name: "Black Frost", price: 250, isVeg: true, tag: "Mafia Signature ⭐", desc: "Decadent dark cocoa, espresso essence and thick chocolate chips" },
+        { name: "Brownie Shake", price: 250, isVeg: true, tag: "Indulgent ⭐", desc: "Gourmet blended shake stuffed with real walnut chocolate brownie chunks" },
+      ]
+    },
+    {
+      id: "mocktails-drinks",
+      category: "Signature Mocktails & Coolers",
+      shortTitle: "Mocktails & Drinks",
+      subtitle: "Exotic chilled quenchers, spiced refreshers & energy boosters",
+      icon: "GlassWater",
+      items: [
+        { name: "Kala Khatta", price: 100, isVeg: true, tag: "Desi Twist", desc: "Tangy Indian blackberry reduction with black salt, cumin and fizz" },
+        { name: "Jeera Masala", price: 100, isVeg: true, desc: "Zesty digestive cooler infused with roasted cumin, lime and soda" },
+        { name: "Spicy Masala", price: 100, isVeg: true, tag: "Spicy Zing", desc: "Sparkling soda spiked with chaat masala, mint and green chili notes" },
+        { name: "Virgin Mojito", price: 100, isVeg: true, tag: "Classic", desc: "Fresh muddled garden mint leaves, lime wedges, cane sugar and chilled soda" },
+        { name: "Fresh Lime Soda", price: 100, isVeg: true, desc: "Crisp freshly squeezed lime juice with sparkling soda (Sweet, Salted or Mixed)" },
+        { name: "Orange Sunrise", price: 100, isVeg: true, tag: "Vibrant", desc: "Layered citrus orange juice with grenadine splash over crushed ice" },
+        { name: "The Godfather Blue Lagoon", price: 100, isVeg: true, tag: "Bestseller", desc: "Electric blue curacao citrus cooler with sprite fizz and lemon wheel" },
+        { name: "Aam Panna", price: 100, isVeg: true, tag: "Refreshing", desc: "Traditional roasted raw green mango elixir with mint and black salt" },
+        { name: "Red Bull Energy Drink", price: 200, isVeg: true, tag: "Energy", desc: "Chilled 250ml can of Red Bull energy drink" },
+        { name: "Hell Energy Drink", price: 150, isVeg: true, tag: "Energy", desc: "Chilled can of Hell Energy Drink" },
+        { name: "Any Cold Drink (400ml)", price: 80, isVeg: true, desc: "Choice of chilled carbonated soft drinks (Thums Up, Coca Cola, Sprite)" },
       ]
     }
   ],

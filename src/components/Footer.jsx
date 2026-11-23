@@ -116,6 +116,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="#menu" className="hover:text-[#E5A93C] transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3.5 h-3.5 text-[#E5A93C]" />
+                  <span>Grand Talkies Menu</span>
+                </a>
+              </li>
+              <li>
                 <a href="#gallery" className="hover:text-[#E5A93C] transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3.5 h-3.5 text-[#E5A93C]" />
                   <span>Visual Odyssey (15 Photos)</span>
